@@ -36,6 +36,8 @@ function Login() {
 
                 if(res.data.success){
                     setUser(res.data.data.user)
+                    console.log(res.data.data.user);
+                    
                     navigate('/')
                 }
 
