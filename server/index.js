@@ -6,6 +6,9 @@ import { authUser, change_password, create_otp, createAboutUs, createMision, cre
 import { protect } from './middleware/authentication_middleware.js'
 import ExpressFormidable from 'express-formidable'
 import { uploadImage } from "./controller/imageUploader.js";
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 //import { protect } from './middleware/auth_middleware.js'
 
@@ -29,7 +32,8 @@ app.use(cors({
 
 }))
 
-
+const PORT = process.env.PORT || 8081;
+const MONGO_URL = process.env.MONGO_URL
 
 //ROUTES
 app.post('/upload', ExpressFormidable({ maxFieldsSize: 5 * 2024 * 2023 }), uploadImage)
@@ -76,11 +80,11 @@ app.post("/logout", logout)
 
 
 
-mongoose.connect('mongodb://localhost:27017/userAuthDB').then(() => {
+mongoose.connect(MONGO_URL).then(() => {
 
     console.log("connected to the database...");
 
-    app.listen(8081, () => {
+    app.listen(PORT, () => {
 
         console.log('server is listening at port 8081....');
     })
@@ -89,6 +93,7 @@ mongoose.connect('mongodb://localhost:27017/userAuthDB').then(() => {
 
     console.log('Failed to connect to the database!', err);
 })
+
 
 
 /*//handles file uploads, documents etc
