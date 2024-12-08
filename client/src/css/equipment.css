@@ -1,0 +1,67 @@
+.equipment-burner-container{
+    background-image: url('../assets/DALL·E 2024-11-28 21.38.49 - A banner image for an equipment donation page featuring vibrant sports equipment like tennis rackets, balls, and shoes neatly arranged on a clean tenn.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    margin-top: -5rem;
+}
+
+.equipment-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.equipment-heading h2{
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.equipment-heading p{
+    margin-top: -.8rem;
+}
+
+.no-bullets{
+    list-style-type: none;
+   
+}
+
+.equipment-container-{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 5%;
+    margin: 0 auto;
+}
+
+.equipment-container- .equipment-box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    background: hsl(0, 12%, 93%);
+    height: 25rem;
+}
+
+.equipment-box h3{
+    display: flex;
+    align-content: center;
+    font-size: 1.7rem;
+    color: blue;
+}
+
+.equipment-box ul li{
+    display: flex;
+    align-items: center;
+    padding: .5rem 0rem;
+    text-align: justify;
+}
+
+.no-bullets p{
+    display: flex;
+    gap: 1rem;
+}

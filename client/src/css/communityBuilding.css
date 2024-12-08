@@ -1,0 +1,140 @@
+.community-buidling-burner{
+    background-image: url('../assets/tennis-court-with-net.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+}
+
+.community-heading h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.community-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: blue;
+    width: 50%;
+    margin: 5rem auto;
+    height: 15rem;
+    color: #fff;
+    border-radius: 3rem;
+
+}
+
+.community-heading p{
+    margin-top: -3.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 30rem;
+    line-height: 1.5;
+}
+
+.community-building-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 5%;
+}
+
+.community-building-box{
+    flex: 1 1 30rem;
+    background: hsl(0, 5%, 96%);
+    padding: 1.5rem;
+    height: 25rem;
+    border-radius: .5rem;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .5);
+    margin-bottom: 1.2rem;
+}
+
+.community-building-box h2{
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+.community-building-box ul li{
+    padding: .5rem 0rem;
+}
+
+.level-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.level-inner-container{
+    background: hsl(0, 5%, 96%);
+    width: 50%;
+    padding: 2rem;
+    height: 25rem;
+    border-radius: 3rem;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .5);
+}
+
+.level-inner-container h3{
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.begginers{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+    background: hsl(240, 80%, 86%);
+    padding: 1rem;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .5);
+}
+
+.intermediate{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+    background: hsl(120, 35%, 87%);
+    padding: 1rem;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .5);
+    margin-bottom: 1.4rem;
+}
+
+
+
+.professional{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+    background: hsl(300, 39%, 81%);
+    padding: 1rem;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .5);
+
+}
+
+.bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 0rem;
+}
+
+.bottom-footer{
+    background: hsl(120, 45%, 87%);
+    padding: 5rem;
+}
+
+.bottom-footer-inner h2{
+
+    font-size: 2rem;
+    font-weight: 300;
+}

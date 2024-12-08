@@ -1,82 +1,105 @@
-.title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
+.contact-container {
+    text-align: center;
+    margin-top: 10rem;
 }
 
-.title h2 {
-    color: hsl(39, 92%, 45%);
-    font-size: 1.8rem;
+.contact-container h1 {
+    font-weight: 300 !important;
+}
+
+.contact-container-inner {
+    /* background: blue; */
+}
+
+.contact-container-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 5%;
+    gap: 5rem;
+    background: linear-gradient(180deg, hsl(199, 49%, 82%), #fff);
+    height: 40rem;
+}
+
+.left-container p:nth-child(1) {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
     font-weight: 300;
 }
 
-.contact-container {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 5rem;
-    margin-top: 6rem;
+.left-container p:nth-child(2) {
+    max-width: 25rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
 }
 
-.contact-right form .form-con {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-left{
-    flex: 1 1 25rem;
-}
-
-.contact-right{
-    flex: 1 1 25rem;
-}
-
-.contact-left span {
-    font-size: 1.8rem;
-}
-
-.contact-left p {
-    font-size: 1.2rem;
+.left-container p:nth-child(3) {
     display: flex;
     align-items: center;
+    font-size: 1.1rem;
 }
 
-.contact-right form input {
-    width: 90% !important;
-    padding: .9rem;
-    border-radius: .5rem;
+.left-container p:nth-child(4) {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.right-containers form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -5rem;
+}
+
+.right-containers form label {
     margin: 1rem 0rem;
 }
 
-.contact-right form textarea {
-    margin-top: 1rem;
-    padding: .8rem;
-    width: 90% !important;
-
+.right-containers form input {
+    border: .1rem solid hsl(0, 10%, 89%);
+    width: 28rem;
+    padding: 1rem;
+    border-radius: .5rem;
 }
 
-.contact-right form button {
-    margin-top: 1rem;
+
+.right-containers form textarea {
+    border: .1rem solid hsl(0, 10%, 89%);
+    width: 28rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.right-containers form button {
     color: #fff;
-    background: hsl(39, 96%, 45%);
+    background: green;
+    padding: 1.1rem 1.5rem;
+    margin-top: 1rem;
     border-radius: 3rem;
-    padding: .8rem 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
+    width: 75%;
 }
 
-.working-h {
-    margin-top: 2.5rem;
+.right-containers form button:hover {
+    background: hsl(120, 69%, 51%);
 }
 
-.working-h p {
-    display: flex;
-    align-items: center !important;
+.left-container {
+    flex: 1 1 25rem;
 }
 
-.working-h p p {
-    margin-bottom: 0rem !important;
+.right-containers {
+    flex: 1 1 25rem;
 }
 
-.working-h p p {
-    color: rgb(3, 119, 3);
-}
+
+/*
+
+
+  <a style={{ textDecoration: 'none' }} href="https://www.tiktok.com/@stheratini?_t=8r7U5fW7Gis&_r=1" target='_blank' rel='noopener noreferrer'><FaTiktok style={{color: '#fff', background: '#333', borderRadius: '.5rem', width: '2rem', height: '2rem', lineHeight: '2', padding: '.4rem'}} />&nbsp;TikTok</a>
+  <a style={{ textDecoration: 'none' }} href="https://www.instagram.com/trap_pkq/profilecard/?igsh=b3hoZml2NzJnczFO" target='_blank' rel='noopener noreferrer'><FaInstagram style={{color: '#fff', background: 'linear-gradient(65deg, hsl(300, 93%, 40%), orange)',borderRadius: '.5rem', width: '2rem', height: '2rem', lineHeight: '2', padding: '.4rem'}} />&nbsp;Instagram</a>
+
+
+*/

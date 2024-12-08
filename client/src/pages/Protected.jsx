@@ -1,69 +1,65 @@
-import { useUserContext } from "../context/userContext.jsx";
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
-import { useEffect } from "react";
+import React, { useEffect, useState } from 'react'
+import { useUserContext } from '../context/userContext.jsx'
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Protected({ children }) {
 
 
     const { user, setUser } = useUserContext()
+
+    const [isLoading, setIsLoading] = useState(false)
+
     const navigate = useNavigate()
 
-    const getUser = async () => {
+    async function handle_fetch() {
 
         try {
 
-            const res = await axios.post("https://mern-food-ordering-app-10.onrender.com/getUser", {
-                token: localStorage.getItem("token")
-            },
-
-                {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem("token")}`
-                    }
-                }
-
-            )
+            const res = await axios.get('http://localhost:8081/getUser', { withCredentials: true })
 
             if (res.data.success) {
-                setUser(res.data.data)
-                
+                setUser(res.data.data.user)
             }
 
             else {
-                localStorage.clear()
-                return navigate("/login")
+                setUser(null)
+                navigate('/login', { replace: true })
             }
-
 
 
         } catch (error) {
             console.log(error);
-            localStorage.clear()
-
+            setUser(null)
+        } finally {
+            setIsLoading(true)
         }
 
     }
 
     useEffect(() => {
 
-        if (!user) {
-            getUser()
-        }
+        handle_fetch()
 
-    }, [user])
+    }, [])
 
-
-    if (localStorage.getItem("token")) {
-        return children
+    if (isLoading) {
+        <div>Loading...</div>
+        return null
     }
 
-    else {
-        localStorage.clear()
-        return navigate("/login")
+    if (!user) {
+        navigate('/login', { replace: true })
     }
+
+
+    return (
+
+        <>{children}</>
+    )
 
 
 }
+
 
 export default Protected

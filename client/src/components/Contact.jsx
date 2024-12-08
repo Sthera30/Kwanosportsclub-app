@@ -1,103 +1,185 @@
 import React, { useEffect, useState } from 'react'
 import '../css/contact.css'
-import { FaEnvelope, FaEnvelopeOpen, FaPhone } from 'react-icons/fa'
-import { toast } from 'react-hot-toast'
+import { FaMailBulk, FaPhone, FaMailchimp } from 'react-icons/fa'
 
 function Contact() {
 
-    const [result, setResult] = useState("");
+  const [result, setResult] = useState("")
 
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        setResult("Sending....");
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
 
-        const formData = new FormData(event.target);
+    const formData = new FormData(event.target);
 
-        formData.append("access_key", "b864ad24-f1e9-4470-9ac5-068b25b9749f");
+    formData.append("access_key", "eb6025cf-c28c-4ad9-b96e-d3b44e44269c");
 
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData,
-        });
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
-        const data = await response.json();
+    const data = await response.json();
 
-        if (data.success) {
-            toast.success("Email sent!")
-            event.target.reset();
-        } else {
-            console.log("Error", data);
-            setResult(data.message);
-        }
-    };
-
-    useEffect(() => {
-
-        window.scrollTo(0, 0)
-
-    }, [])
+    if (data.success) {
+      setResult("Email sent...");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
 
 
-    return (
+  useEffect(() => {
 
-        <>
+    window.scrollTo(0,0)
 
-            <div className='Our-Promise-Banner'>
+  },[])
 
-                <h2>GET IN TOUCH</h2>
+  return (
+    <>
 
-            </div>
+      <div className='contact-container'>
 
-            <div className='contact-container sec'>
+        <h1>GET IN TOUCH</h1>
 
-
-                <div className='contact-left'>
-
-                    <span>Send us a message <FaEnvelopeOpen style={{ color: 'orange' }} />  </span>
-                    <p>Feel free to leave us a meesage. We will contact you within 3 business day.</p>
-                    <p><FaPhone style={{ color: 'orange' }} /> &nbsp; (+27) 62 419 2299</p>
-                    <p><FaEnvelope style={{ color: 'orange' }} /> &nbsp; tinisthera@gmail.com</p>
-
-                    <div className='working-h'>
-
-                        <h1 style={{marginBottom:'1rem'}}>Working Hours</h1>
-                        <p>Mon-Fri:&nbsp;<p> Open 24 hours</p></p>
-                        <p>Sat-Sun:&nbsp; <p>Open 24 hours</p></p>
-                        <p>Public Holiday: &nbsp; <p>Open 24 hours</p></p>
-
-                    </div>
-
-                </div>
+      </div>
 
 
-                <div className='contact-right'>
+      <div className='contact-container-inner'>
 
-                    <form onSubmit={async (event) => onSubmit(event)}>
+        <div className='left-container'>
 
-                        <div className='form-con'>
+          <p>Send us a message &nbsp; <FaMailBulk style={{ color: 'orange' }} /> </p>
+          <p>For queries on how to become a club member, get lessons or bookings for your school, use the details below:</p>
+          <p><FaPhone fontSize={'1.5rem'} style={{ color: 'blue' }} /> &nbsp; (+27) 78 065 1482</p>
+          <p><FaMailBulk fontSize={'1.5rem'} style={{ color: 'orange' }} /> &nbsp; kwanosportsclub@gmail.com</p>
 
-                            <span>Enter your name</span>
-                            <input type="text" name='name' placeholder='Enter your name' required />
-
-                            <span>Enter your email</span>
-                            <input type="email" name='email' placeholder='Enter your email' required />
-
-                            <span>Write your messages here</span>
-                            <textarea name="message" id="" rows={10} cols={10} placeholder='Enter your message'></textarea>
-
-                        </div>
-
-                        <button type='submit'>Send message</button>
-
-                    </form>
-
-                </div>
-
-            </div >
-        </>
+        </div>
 
 
-    )
+        <div className='right-containers'>
+
+          <form onSubmit={async (event) => onSubmit(event)}>
+
+            <label>Enter Your Name</label>
+            <input type='text' id='name' name='name' placeholder='Enter your name here' required />
+
+            <label>Enter Your Email</label>
+            <input type='email' id='email' name='email' placeholder='Enter your email here' required />
+
+            <label>Write your messages here.</label>
+            <textarea name="message" id="message" rows={10} cols={10} placeholder='Enter your message' required></textarea>
+
+            <button>Send message</button>
+            <br />
+            <span style={{color: 'green'}}>{result}</span>
+
+          </form>
+
+        </div>
+
+
+      </div>
+
+    </>
+  )
 }
 
 export default Contact
+
+/*
+function Contact() {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "b864ad24-f1e9-4470-9ac5-068b25b9749f");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully!");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+  return (
+    <>
+      <div className="contact">
+        <h2>Get in Touch</h2>
+      </div>
+
+      <div className="contact-container sec">
+        <div className="contact-info">
+          <h3>
+            Send me a message <i className="fas fa-envelope-open"></i>
+          </h3>
+          <p>
+            Feel free to reach out through contact form or find my contact
+            information below.
+          </p>
+          <p>
+            <i className="fas fa-phone"></i>(+27) 62 419 2299
+          </p>
+          <p>
+            <i className="fas fa-envelope"></i>tinisthera@gmail.com
+          </p>
+        </div>
+        <form onSubmit={async (event) => onSubmit(event)}>
+          <label htmlFor="name">Enter Your Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+          <label htmlFor="email">Enter Your Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label htmlFor="message">Write your messages here</label>
+          <textarea
+            id="message"
+            name="message"
+            rows={5}
+            cols={10}
+            placeholder="Enter your message"
+            required
+          ></textarea>
+          <button type="submit" className="btnSend">
+            Send message
+          </button>
+          <br />
+        <span>{result}</span>
+
+        </form>
+      </div>
+    </>
+  );
+}
+
+
+export default Contact;
+
+*/
+
+//eb6025cf-c28c-4ad9-b96e-d3b44e44269c

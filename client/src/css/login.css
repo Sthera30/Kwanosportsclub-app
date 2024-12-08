@@ -7,7 +7,7 @@
 }
 
 .login {
-    background: #fff;
+    background: hsl(120, 16%, 96%);
     padding: 2rem;
     width: 32rem;
 }
@@ -26,7 +26,7 @@
 
 .btnSignIn {
     color: #fff;
-    background: linear-gradient(65deg, hsl(39, 93%, 47%), hsl(300, 82%, 55%));
+    background: hsl(120, 97%, 24%);
     padding: 1rem 1.5rem;
     border-radius: 3rem;
     cursor: pointer;
@@ -35,12 +35,12 @@
 }
 
 .btnSignIn:hover{
-    background: linear-gradient(65deg, hsl(39, 97%, 62%), hsl(300, 96%, 45%));
+    background: hsl(120, 63%, 55%);
 
 }
 
 .sign-up{
-   color:hsl(39, 93%, 47%)
+   color: green
 }
 
 .login form a {

@@ -1,0 +1,12 @@
+.about-burner-container{
+    margin-bottom: -3rem;
+}
+
+.about-burner-container .about-burner{
+    background-image: url('../assets/IMG-20241121-WA0030.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    height: 80vh;
+}

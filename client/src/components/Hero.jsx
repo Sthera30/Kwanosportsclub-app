@@ -1,65 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import HeroImg from '../assets/hero.png'
+import React from 'react'
 import '../css/hero.css'
-import { FaSearch } from 'react-icons/fa'
+import Img1 from '../assets/top-view-table-full-food.png'
 import { NavLink } from 'react-router-dom'
 
 function Hero() {
-
-
-
-    const [bounce, setBounce] = useState(false);
-    const text = "To Your Doorstep!";
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setBounce(prev => !prev);
-        }, 1000);
-        return () => clearInterval(interval);
-    }, []);
-
-
-
     return (
-        <div className='container'>
+        <>
 
-            <div className='left-container'>
+            <div className='hero-container'>
 
-                <h2>Bringing Foodie Joy <span className='serious'></span>
 
-                    <div style={{ display: "flex", gap: "0" }}>
-                        {text.split('').map((char, i) => (
-                            <span
-                                key={i}
-                                className="bounce-stretch food"
-                                style={{
-                                    animationDelay: `${i * 0.2}s`, // Adjust delay to control staggered effect
-                                    display: "inline-block",
-                                    marginRight: char === " " ? "0.25rem" : "0",
-                                }}
-                            >
-                                {char}
-                            </span>
-                        ))}
-                    </div>
-                </h2>
-                <p>Experience Taste Hub, where every dish tells a story. Discover insights and dining options that elevate your love for great food.</p>
-               
-                <div className='explore'>
+                <div className='hero-inner'>
 
-                    <NavLink to={"/our-food"} style={{textDecoration: 'none'}} className='btnExplore'>Explore Now</NavLink>
+                    <h1>WELCOME TO KWANOBUHLE TENNIS CLUB.</h1>
+                    <NavLink to={'/community-building'} className='join'>J O I N &nbsp; N O W</NavLink>
 
                 </div>
-            </div>
 
-            <div className='right-container'>
-
-                <img src={HeroImg} alt="" />
 
             </div>
 
-        </div>
 
+        </>
     )
 }
 

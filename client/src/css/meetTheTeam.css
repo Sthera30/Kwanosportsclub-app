@@ -1,0 +1,44 @@
+.add-team-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+.add-team-container .add-team-inner form{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+}
+
+.add-team-container .add-team-inner form label{
+    margin: 1rem 0rem;
+}
+
+.add-team-container .add-team-inner form input{
+    border: .1rem solid hsl(0, 9%, 85%);
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.add-team-container .add-team-inner form button{
+    margin-top: 1rem;
+    background: green;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.add-team-inner{
+    background: hsl(0, 14%, 97%);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+

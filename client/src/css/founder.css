@@ -1,0 +1,50 @@
+.founder-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0rem;
+    text-align: center;
+}
+
+.founder-inner-container {
+    background: hsl(0, 0%, 96%);
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.founder-container h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.founder-image-container img {
+    width: 30%;
+    height: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+.vlog-pics-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1%;
+    gap: 1.2rem;
+}
+
+.vlog-pics {
+    flex: 1 1 30rem;
+    height: 25rem;
+}
+
+.vlog-pics img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .9rem;
+}

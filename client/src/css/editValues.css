@@ -1,0 +1,58 @@
+.edit-values-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+.edit-values-container .edit-values-inner form{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+}
+
+.edit-values-container .edit-values-inner form label{
+    margin: 1rem 0rem;
+}
+
+.edit-values-container .edit-values-inner form input{
+    border: .1rem solid hsl(0, 9%, 85%);
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.edit-values-container .edit-values-inner form textarea{
+    border: .1rem solid hsl(0, 9%, 85%);
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.edit-valiues-container .edit-values-inner form button{
+    margin-top: 1rem;
+    background: green;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.edit-values-inner{
+    background: hsl(0, 14%, 97%);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.btnUpdateValues{
+    color: #fff;
+    margin-top: 1rem;
+    background: green;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+

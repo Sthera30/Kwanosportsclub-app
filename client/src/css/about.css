@@ -1,61 +1,317 @@
-.about-container{
+.about-container {
+    padding: 2rem 6%;
+}
+
+.about-container h3 {
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: -1.1rem;
+}
+
+.about-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content p {
+    max-width: 65rem;
+    line-height: 1.5;
+    font-size: 1.15rem;
+}
+
+.about-burner {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 5rem;
+    text-align: center;
 }
 
-.about-left{
-    flex: 1 1 25rem;
-}
-
-.about-left img{
+.about-burner-inner {
+    background: linear-gradient(65deg, hsl(120, 84%, 67%), hsl(197, 89%, 63%));
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    text-align: center;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about-right{
+.about-burner-inner h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.our-mission-vision-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 5%;
+}
+
+.our-mission-vision-box {
     flex: 1 1 25rem;
-    max-width: 30rem;
-}
-
-.about-right h1{
-    color: hsl(0, 1%, 44%);
-}
-
-.about-right span{
-    color: hsl(39, 97%, 29%);
-    font-size: 2.2rem;
-}
-
-.about{
-    color: #fff !important;
-    background: hsl(197, 92%, 45%);
-    padding: .6rem 1rem;
-    border-radius: 3rem;
-}
-
-.more{
-    color:red !important;
-}
-
-.multiple{
-    color: hsl(43, 90%, 52%) !important;
-}
-
-.about-right p{
-    line-height: 1.5;
-}
-
-.btnAbout{
-    color: #fff;
-    background: hsl(39, 94%, 43%) !important;
-    padding: .8rem 1.5rem;
+    border: .1rem solid hsl(0, 3%, 75%);
+    height: 20rem;
+    padding: 1.5rem;
     border-radius: 3rem;
     cursor: pointer;
 }
 
-.btnAbout:hover{
-    background: orange !important;
+
+.our-mission-vision-box:nth-child(1) {
+    background: hsl(197, 93%, 39%);
+    color: #fff;
+
+}
+
+
+.our-mission-vision-box:nth-child(2) {
+    background: hsl(0, 1%, 72%);
+    color: #fff;
+
+}
+
+
+
+.our-mission-vision-box:hover .eye {
+    color: hsl(197, 89%, 49%) !important;
+}
+
+.our-mission-vision-box h2 {
+    font-size: 2rem;
+}
+
+.our-mission-vision-box p {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.our-values-burner {
+    margin: 8rem 0rem;
+    text-align: center;
+    width: 100%;
+}
+
+.our-values-inner {
+    background-image: url('../assets/3d-cartoon-delivery-driver.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.our-values-inner h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.our-values-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 5%;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.our-values-box {
+    margin: 2rem 0rem;
+    background: hsl(0, 8%, 88%);
+    height: 20rem;
+    padding: 1.8rem;
+    width: 100%;
+    border-radius: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .5);
+}
+
+.our-values-box .button-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btnDelete{
+    color: #fff;
+    background: red;
+    padding: .8rem 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.our-values-box span {
+    color: #fff;
+    background: blue;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 5rem;
+    height: 4.5rem;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-values-box p {
+    line-height: 1.5;
+    font-size: 1rem;
+    max-width: 35rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.our-values-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container .btnReadMore {
+    color: #fff;
+    background: green;
+    padding: 1.2rem 2.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.button-container .btnReadMore:hover {
+    background: rgb(6, 189, 6);
+}
+
+.projects-burner-container {
+    background-image: url('../assets/tennis-ball-hard-court-corner-line.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 0rem;
+}
+
+.projects-inner-container {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.projects-inner-container h2 {
+    color: green;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.project-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-heading h1 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 2%;
+}
+
+.projects-box {
+    flex: 1 1 30rem;
+    border: .1rem solid hsl(0, 9%, 87%);
+    height: 30rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .5);
+}
+
+.projects-box h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+.projects-box:nth-child(1) h3 {
+    color: blue;
+}
+
+.projects-box:nth-child(2) h3 {
+    color: green;
+}
+
+.projects-box p {
+    display: flex;
+    align-items: center;
+}
+
+.projects-box ul li {
+    padding: .3rem 0rem;
+    line-height: 1.4;
+}
+
+.explore-container {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 6rem 0rem;
+}
+
+.explore-container .btnExplore {
+    color: #fff;
+    background: green;
+    padding: 1.1rem 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.explore-container .btnExplore:hover{
+    background: hsl(120, 73%, 51%);
+}
+
+.icon{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+}
+
+.button-container .btnEdit{
+    color: #fff;
+    background: hsl(120, 81%, 39%);
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
 }

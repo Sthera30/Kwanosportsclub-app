@@ -1,23 +1,27 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
+
+
 
 
 const aboutUsSchema = mongoose.Schema(
+
     {
-        aboutUsHeading: {
+
+        aboutTitle: {
+
             type: String,
             required: true
         },
 
-        aboutUsDescription: {
-            type: String,
-            required: true
-        },
+        aboutDescription: {
 
-        aboutUsImage: {
             type: String,
             required: true
+
         }
+
     }
+
 )
 
 export const aboutUsModel = mongoose.model('aboutUs', aboutUsSchema)

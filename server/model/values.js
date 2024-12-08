@@ -1,20 +1,24 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 
 const valuesSchema = mongoose.Schema(
+
     {
-         
-            valuesHeading: {
-                type: String,
-                required: true
-            },
+        valuesIcon: {
+            type: String,
+            required: true
+        },
 
-            valuesDescription: {
-                type: String,
-                required: true
+        valuesTitle: {
+            type: String,
+            required: true
+        },
 
-            }
+        valuesDescription: {
+            type: String,
+            required: true
         }
+    }
 )
 
-export const valuesModel = mongoose.model('values', valuesSchema)
+export const valueModel = mongoose.model('values', valuesSchema)

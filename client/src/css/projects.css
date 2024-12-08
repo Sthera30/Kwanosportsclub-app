@@ -1,0 +1,23 @@
+.project-burner-container-{
+    background-image: url('../assets/tennis-ball-laying-floor.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+}
+
+.projects-heading{
+    margin: 5rem 0rem;
+}
+
+.projects-heading h1{
+    text-align: center;
+    font-weight: 300;
+}
+
+.build{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: -1rem;
+}
