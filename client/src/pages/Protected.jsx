@@ -16,7 +16,7 @@ function Protected({ children }) {
 
         try {
 
-            const res = await axios.get('http://localhost:8081/getUser', { withCredentials: true })
+            const res = await axios.get('https://fullstack-kwanosportsclub-app-backendd.onrender.com/getUser', { withCredentials: true })
 
             if (res.data.success) {
                 setUser(res.data.data.user)

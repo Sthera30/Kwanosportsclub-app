@@ -22,7 +22,7 @@ function ChangePassword() {
 
         try {
 
-            const { data } = await axios.post(`http://localhost:8081/changePassword`, { currentPassword, newPassword, email })
+            const { data } = await axios.post(`https://fullstack-kwanosportsclub-app-backendd.onrender.com/changePassword`, { currentPassword, newPassword, email })
 
             if (data.success) {
                 toast.success(data.message)
