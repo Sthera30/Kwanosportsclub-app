@@ -148,7 +148,7 @@ export const create_otp = async (req, res) => {
             auth: {
 
                 user: 'tinisthera@gmail.com',
-                pass: 'evhrsmudgmuasuxk'
+                pass: 'ciujhxhgrkwhbxml'
 
             }
 
@@ -253,40 +253,32 @@ export const verifyEmail = async (req, res) => {
         const hashedOtp = await hashOtp(otpGen)
 
 
-        const transporter = nodemailer.createTransport({
-            service: 'Gmail',
-            auth: {
-                user: 'tinisthera@gmail.com',
-                pass: 'evhrsmudgmuasuxk'
-            }
-        })
-
-        const mailOptions = {
-            from: 'Food Eats Team',
-            to: email,
-            subject: 'OTP Verification Code',
-            text: `${otpGen} is your verification code`
-        }
-
-        transporter.sendMail(mailOptions, (err, info) => {
-
-            if (err) {
-                return res.status(200).json({ error: 'Failed sending an email...', success: false })
-            }
-
-            return res.status(200).json({ message: 'OTP sent successfully!', success: true })
-
-        })
-
-
         const user_email = await userModel.findOne({ email })
 
         if (!user_email) {
             return res.status(200).json({ error: 'Please first register email address!', success: false })
         }
 
-        await otpModel.create({ otp: hashedOtp, userEmail: email })
+        const transporter = nodemailer.createTransport({
+            service: 'Gmail',
+            auth: {
+                user: 'tinisthera@gmail.com',
+                pass: 'ciujhxhgrkwhbxml'
+            }
+        })
 
+        const mailOptions = {
+            from: 'Kwanosportsclub team',
+            to: email,
+            subject: 'OTP Verification Code',
+            text: `${otpGen} is your verification code`
+        }
+
+       await transporter.sendMail(mailOptions)
+
+       await otpModel.create({ otp: hashedOtp, userEmail: email });
+
+        console.log(hashedOtp);
 
         return res.status(200).json({
             message: 'OTP sent to your email address!', success: true, data: {
@@ -302,7 +294,6 @@ export const verifyEmail = async (req, res) => {
 
 
 }
-
 
 export const change_password = async (req, res) => {
 
