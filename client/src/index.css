@@ -161,14 +161,14 @@ html {
 
   }
 
-  .chevronDown{
+  .chevronDown {
     position: absolute;
     top: 5.5rem;
     right: 2rem;
     color: #333 !important;
   }
 
-  .chevronDown2{
+  .chevronDown2 {
     position: absolute;
     top: 10rem;
     right: 2rem;
@@ -176,31 +176,31 @@ html {
   }
 
 
-.equipment-container {
-  background: #fff;
-  position: absolute;
-  top: 12.5rem;
-  width: 100%;
-  right: 0;
-  padding: 0;
-  z-index: 9;
-}
+  .equipment-container {
+    background: #fff;
+    position: absolute;
+    top: 12.5rem;
+    width: 100%;
+    right: 0;
+    padding: 0;
+    z-index: 9;
+  }
 
-.meet-the-team-container{
-  position: absolute;
-  top: 8.4rem;
-  background: #fff;
-  width: 100%;
-  right: 0;
-  padding: 0;
-  z-index: 9;
-}
+  .meet-the-team-container {
+    position: absolute;
+    top: 8.4rem;
+    background: #fff;
+    width: 100%;
+    right: 0;
+    padding: 0;
+    z-index: 9;
+  }
 
-.nav a:nth-child(2).showTeam{
-  margin-top: .4rem;
-  margin-bottom: 4rem;
-  
-}
+  .nav a:nth-child(2).showTeam {
+    margin-top: .4rem;
+    margin-bottom: 4rem;
+
+  }
 
 }
 
@@ -272,7 +272,7 @@ html {
 
   .contact-container {
     margin-top: 12rem;
-}
+  }
 
 
 }
@@ -432,10 +432,14 @@ html {
     height: 55vh;
   }
 
-  
-.equipment-container {
-  top: 13rem;
-}
+
+  .equipment-container {
+    top: 13rem;
+  }
+
+  .equipment-container- .equipment-box {
+    height: 28rem;
+  }
 
 }
 
@@ -443,11 +447,11 @@ html {
 @media (max-width: 423px) {
 
 
-.add-team-container .add-team-inner form{
-  width: 80%rem;
+  .add-team-container .add-team-inner form {
+    width: 80%rem;
 
-}
-  
+  }
+
 }
 
 
