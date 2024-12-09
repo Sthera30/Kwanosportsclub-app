@@ -179,7 +179,6 @@ export const create_otp = async (req, res) => {
 
 }
 
-
 export const verifyOtp = async (req, res) => {
 
     const { otp, email } = req.body

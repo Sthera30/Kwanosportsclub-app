@@ -32,6 +32,8 @@ function Login() {
             else {
                 toast.success("Success!")
 
+                localStorage.setItem("email", email)
+
                 const res = await axios.get('https://fullstack-kwanosportsclub-app-backendd.onrender.com/getUser', {withCredentials:true})
 
                 if(res.data.success){
