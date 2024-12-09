@@ -226,8 +226,6 @@ export const verifyOtp = async (req, res) => {
     }
 
 }
-
-
 export const verifyEmail = async (req, res) => {
 
     const { email } = req.body
