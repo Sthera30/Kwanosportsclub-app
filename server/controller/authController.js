@@ -147,8 +147,8 @@ export const create_otp = async (req, res) => {
             service: 'Gmail',
             auth: {
 
-                user: process.env.USER,
-                pass: process.env.PASS
+                user: 'tinisthera@gmail.com',
+                pass: 'evhrsmudgmuasuxk'
 
             }
 
