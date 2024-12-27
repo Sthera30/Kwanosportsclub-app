@@ -20,7 +20,7 @@ function Register() {
 
         try {
 
-            const { data } = await axios.post(`https://fullstack-kwanosportsclub-app-backendd.onrender.com/register`, { name, email, password, confirmPassword }, { withCredentials: true })
+            const { data } = await axios.post(`http://localhost:8081/register`, { name, email, password, confirmPassword }, { withCredentials: true })
 
             if (data.success) {
                 toast.success(data.message)

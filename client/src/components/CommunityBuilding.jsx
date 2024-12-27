@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react'
 import '../css/communityBuilding.css'
 import { User2Icon, Users2Icon, CheckCircle2Icon } from 'lucide-react'
+import Review from '../components/Review.jsx'
 
 function CommunityBuilding() {
 
 
-useEffect(() => {
+  useEffect(() => {
 
-  window.scrollTo(0,0)
+    window.scrollTo(0, 0)
 
-},[])
+  }, [])
 
 
   return (
@@ -24,12 +25,7 @@ useEffect(() => {
 
       </div>
 
-      <div className='community-heading'>
 
-        <h2>Private Training Lessons</h2>
-        <p>Mobile tennis club - We prioritize early development of young children aged between 6-13, while keeping our services accessible to all</p>
-
-      </div>
 
       <div className='community-building-container'>
 
@@ -69,8 +65,15 @@ useEffect(() => {
 
         </div>
 
+      </div>
+
+      <div className='community-heading'>
+
+        <h2>Private Training Lessons</h2>
+        <p>Mobile tennis club - We prioritize early development of young children aged between 6-13, while keeping our services accessible to all</p>
 
       </div>
+
 
       <div className='level-container'>
 
@@ -102,6 +105,9 @@ useEffect(() => {
         </div>
 
       </div>
+
+      <Review />
+
 
       <div className='bottom-footer'>
 

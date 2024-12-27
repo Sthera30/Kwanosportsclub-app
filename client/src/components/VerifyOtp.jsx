@@ -23,7 +23,7 @@ function VerifyOtp() {
 
         try {
 
-            const { data } = await axios.post(`https://fullstack-kwanosportsclub-app-backendd.onrender.com/verifyOtp`, { otp, email })
+            const { data } = await axios.post(`http://localhost:8081/verifyOtp`, { otp, email })
 
             if (data.success) {
                 toast.success(data.message)
