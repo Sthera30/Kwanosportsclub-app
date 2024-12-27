@@ -22,7 +22,7 @@ function EditValues() {
 
         try {
 
-            const res = await axios.put('http://localhost:8081/updateValues', { id, valuesIcon, valuesTitle, valuesDescription })
+            const res = await axios.put('https://fullstack-kwanosportsclub-app-backendd.onrender/updateValues', { id, valuesIcon, valuesTitle, valuesDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)
@@ -45,7 +45,7 @@ function EditValues() {
 
         try {
 
-            const res = await axios.get(`http://localhost:8081/getValuesById?id=${id}`)
+            const res = await axios.get(`https://fullstack-kwanosportsclub-app-backendd.onrender/getValuesById?id=${id}`)
 
             if (res.data.success) {
                 setData(res.data.data.values)

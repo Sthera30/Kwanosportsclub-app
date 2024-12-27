@@ -16,7 +16,7 @@ function EditVision() {
 
         try {
 
-            const res = await axios.get(`http://localhost:8081/getVisionById?id=${id}`)
+            const res = await axios.get(`https://fullstack-kwanosportsclub-app-backendd.onrender/getVisionById?id=${id}`)
 
             if (res.data.success) {
                 setData(res.data.data.vision)
@@ -40,7 +40,7 @@ function EditVision() {
 
         try {
 
-            const res = await axios.put(`http://localhost:8081/updateVision`, { id, visionTitle, visionDescription })
+            const res = await axios.put(`https://fullstack-kwanosportsclub-app-backendd.onrender/updateVision`, { id, visionTitle, visionDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)

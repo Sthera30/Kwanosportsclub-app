@@ -78,7 +78,7 @@ function Navbar() {
 
         try {
 
-            const res = await axios.post('http://localhost:8081/logout', {}, { withCredentials: true })
+            const res = await axios.post('https://fullstack-kwanosportsclub-app-backendd.onrender/logout', {}, { withCredentials: true })
 
             if (res.data.success) {
                 toast.success(res.data.message)
