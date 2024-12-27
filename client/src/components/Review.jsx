@@ -26,7 +26,7 @@ function Review() {
             <div className="review-container">
                 <Swiper
                     modules={[Autoplay, Pagination]}
-                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    autoplay={{ delay: 8000, disableOnInteraction: false }}
                     spaceBetween={20}
                     slidesPerView={1}
                     pagination={{ clickable: true }}
