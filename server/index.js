@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }))
 //Cookies
 app.use(cookieParser())
 
-/*const corsOptions = {
+const corsOptions = {
     origin: [
         "http://localhost:5173", 
         "https://fullstack-kwanosportsclub-app-frontend.onrender.com" 
@@ -33,15 +33,8 @@ app.use(cookieParser())
  credentials: true 
 };
 
-*/
-
 //cors
-app.use(cors({
-
-    origin: 'http://localhost:5173',
-    credentials: true
-
-}))
+app.use(cors(corsOptions))
 
 const PORT = process.env.PORT || 8081;
 const MONGO_URL = process.env.MONGO_URL
@@ -91,7 +84,7 @@ app.post("/logout", logout)
 
 
 
-mongoose.connect("mongodb://localhost:27017/userAuthDB").then(() => {
+mongoose.connect(MONGO_URL).then(() => {
 
     console.log("connected to the database...");
 
