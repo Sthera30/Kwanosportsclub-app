@@ -19,7 +19,7 @@ function AddValues() {
 
         try {
 
-            const res = await axios.post('http://localhost:8081/createValues', { valuesIcon, valuesTitle, valuesDescription })
+            const res = await axios.post('https://kwanosportsclub-backend-app.onrender.com/createValues', { valuesIcon, valuesTitle, valuesDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)

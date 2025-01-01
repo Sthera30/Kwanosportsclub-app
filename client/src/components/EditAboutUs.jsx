@@ -23,7 +23,7 @@ function EditAboutUs() {
 
         try {
 
-            const res = await axios.put(`http://localhost:8081/updateAboutUs`, { id, aboutTitle, aboutDescription })
+            const res = await axios.put(`https://kwanosportsclub-backend-app.onrender.com/updateAboutUs`, { id, aboutTitle, aboutDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)
@@ -45,7 +45,7 @@ function EditAboutUs() {
 
         try {
 
-            const res = await axios.get(`http://localhost:8081/getAboutUsById?id=${id}`)
+            const res = await axios.get(`https://kwanosportsclub-backend-app.onrender.com/getAboutUsById?id=${id}`)
 
             if (res.data.success) {
                 setData(res.data.data.about)
