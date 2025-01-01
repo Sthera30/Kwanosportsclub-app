@@ -28,7 +28,7 @@ function TheTeam() {
 
         try {
 
-            const res = await axios.get(`https://fullstack-kwanosportsclub-app-backendd.onrender/getAllTeam`)
+            const res = await axios.get(`http://localhost:8081/getAllTeam`)
 
             if (res.data.success) {
                 setTeam(res.data.data.team)
@@ -47,7 +47,7 @@ function TheTeam() {
 
         try {
 
-            const res = await axios.delete(`https://fullstack-kwanosportsclub-app-backendd.onrender/removeTeam?id=${id}`)
+            const res = await axios.delete(`http://localhost:8081/removeTeam?id=${id}`)
 
             if (res.data.success) {
                 toast.success(res.data.message)

@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false }))
 //Cookies
 app.use(cookieParser())
 
-const corsOptions = {
+/*const corsOptions = {
     origin: [
         "https://fullstack-kwanosportsclub-app-frontend.onrender.com" 
     ],
@@ -32,8 +32,13 @@ const corsOptions = {
  credentials: true 
 };
 
+*/
+
 //cors
-app.use(cors(corsOptions))
+app.use(cors({
+    origin: 'http://localhost:5173',
+    credentials: true
+}))
 
 const PORT = process.env.PORT || 8081;
 const MONGO_URL = process.env.MONGO_URL

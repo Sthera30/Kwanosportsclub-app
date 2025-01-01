@@ -22,7 +22,7 @@ function EditMission() {
 
         try {
 
-            const res = await axios.put(`https://fullstack-kwanosportsclub-app-backendd.onrender/updateMission`, { id, missionTitle, missionDescription })
+            const res = await axios.put(`http://localhost:8081/updateMission`, { id, missionTitle, missionDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)
@@ -44,7 +44,7 @@ function EditMission() {
 
         try {
 
-            const res = await axios.get(`https://fullstack-kwanosportsclub-app-backendd.onrender/getMissionById?id=${id}`)
+            const res = await axios.get(`http://localhost:8081/getMissionById?id=${id}`)
 
             if (res.data.success) {
                 setData(res.data.data.mission)

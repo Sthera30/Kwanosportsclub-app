@@ -25,7 +25,7 @@ function EditMeetTheTeam() {
 
         try {
 
-            const res = await axios.post(`https://fullstack-kwanosportsclub-app-backendd.onrender/upload`, formData)
+            const res = await axios.post(`http://localhost:8081/upload`, formData)
 
             setImage({
                 url: res.data.url,
@@ -48,7 +48,7 @@ function EditMeetTheTeam() {
 
         try {
 
-            const res = await axios.get(`https://fullstack-kwanosportsclub-app-backendd.onrender/getTeamById?id=${id}`)
+            const res = await axios.get(`http://localhost:8081/getTeamById?id=${id}`)
 
             if(res.data.success){
                 setData(res.data.data.team)
@@ -77,7 +77,7 @@ function EditMeetTheTeam() {
 
         try {
 
-            const res = await axios.put(`https://fullstack-kwanosportsclub-app-backendd.onrender/updateTeam`, { id, userTeamProfile, userTeamName, userTeamDescription })
+            const res = await axios.put(`http://localhost:8081/updateTeam`, { id, userTeamProfile, userTeamName, userTeamDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)

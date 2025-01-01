@@ -22,7 +22,7 @@ function AboutUs() {
 
         try {
 
-            const res = await axios.get("https://fullstack-kwanosportsclub-app-backendd.onrender/getAllValues")
+            const res = await axios.get("http://localhost:8081/getAllValues")
 
             if (res.data.success) {
                 setValues(res.data.data.values)
@@ -46,7 +46,7 @@ function AboutUs() {
 
         try {
 
-            const res = await axios.get('https://fullstack-kwanosportsclub-app-backendd.onrender/getAllAboutUs')
+            const res = await axios.get('http://localhost:8081/getAllAboutUs')
 
             if (res.data.success) {
                 setAbout(res.data.data.about)
@@ -67,7 +67,7 @@ function AboutUs() {
 
         try {
 
-            const res = await axios.get('https://fullstack-kwanosportsclub-app-backendd.onrender/getAllVision')
+            const res = await axios.get('http://localhost:8081/getAllVision')
 
             if (res.data.success) {
                 setId(res.data.data.vision)
@@ -88,7 +88,7 @@ function AboutUs() {
 
         try {
 
-            const res = await axios.get('https://fullstack-kwanosportsclub-app-backendd.onrender/getAllMission')
+            const res = await axios.get('http://localhost:8081/getAllMission')
 
             if (res.data.success) {
                 setMission(res.data.data.mision);
@@ -109,7 +109,7 @@ function AboutUs() {
 
         try {
 
-            const res = await axios.delete(`https://fullstack-kwanosportsclub-app-backendd.onrender/removeValues?id=${id}`)
+            const res = await axios.delete(`http://localhost:8081/removeValues?id=${id}`)
 
             if (res.data.success) {
                 toast.success(res.data.message)

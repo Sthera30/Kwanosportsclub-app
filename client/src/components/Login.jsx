@@ -23,7 +23,7 @@ function Login() {
 
         try {
                                                                                                        //SEND COOKIES
-            const { data } = await axios.post("https://fullstack-kwanosportsclub-app-backendd.onrender/login", { email, password }, {withCredentials: true})
+            const { data } = await axios.post("http://localhost:8081/login", { email, password }, {withCredentials: true})
 
             if (data.error) {
                 toast.error(data.error)
@@ -34,7 +34,7 @@ function Login() {
 
                 localStorage.setItem("email", email)
 
-                const res = await axios.get('https://fullstack-kwanosportsclub-app-backendd.onrender/getUser', {withCredentials:true})
+                const res = await axios.get('http://localhost:8081/getUser', {withCredentials:true})
 
                 if(res.data.success){
                     setUser(res.data.data.user)
