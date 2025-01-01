@@ -111,3 +111,11 @@
     justify-content: center;
     margin: 5rem 0rem;
 }
+
+.banking-details-inner h7{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+}

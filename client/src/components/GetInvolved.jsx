@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react'
 import img1 from '../assets/donation.png'
+import img2 from '../assets/atm-card.png'
 import '../css/GetInvolved.css'
+import { BookOpen, CreditCard } from 'lucide-react'
 
 function GetInvolved() {
 
 
-useEffect(() => {
+  useEffect(() => {
 
-  window.scrollTo(0,0)
+    window.scrollTo(0, 0)
 
-},[])
+  }, [])
 
   return (
 
@@ -24,6 +26,56 @@ useEffect(() => {
         </div>
 
       </div>
+
+      <div className='donation-sub'>
+
+        <div className='donation-inner-sub'>
+
+          <img src={img2} alt="" />
+          <h2>Private Lessons and Training Sessions</h2>
+          <p>This is where you pay for private lessons and training sessions</p>
+
+        </div>
+
+      </div>
+
+
+      <div className='banking-details-container'>
+
+        <h2>Bank details</h2>
+
+        <div className='banking-details-inner'>
+
+        <h7 style={{textAlign: 'center', fontSize: '1.2rem'}}><BookOpen style={{color: 'blue'}} fontWeight={800} /> &nbsp;&nbsp;Lessons & Training Sessions Payment Details</h7>
+
+
+          <div className='banking-'>
+
+
+            <div className='banking-left'>
+
+              <h5>Bank Name</h5>
+              <h4>Capitec Bank</h4>
+              <h6>Account Number</h6>
+              <p>1580873101</p>
+
+            </div>
+
+            <div className='banking-right'>
+
+              <h5>Account Type</h5>
+              <h4>Savings Account</h4>
+              <h6>Branch Code</h6>
+              <p>470010</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
 
       <div className='donation-sub'>
 
