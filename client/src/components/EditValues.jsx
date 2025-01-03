@@ -22,7 +22,7 @@ function EditValues() {
 
         try {
 
-            const res = await axios.put('https://kwanosportsclub-backend-app.onrender.com/updateValues', { id, valuesIcon, valuesTitle, valuesDescription })
+            const res = await axios.put('https://kwanosportsclub.co.za/updateValues', { id, valuesIcon, valuesTitle, valuesDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)
@@ -45,7 +45,7 @@ function EditValues() {
 
         try {
 
-            const res = await axios.get(`https://kwanosportsclub-backend-app.onrender.com/getValuesById?id=${id}`)
+            const res = await axios.get(`https://kwanosportsclub.co.za/getValuesById?id=${id}`)
 
             if (res.data.success) {
                 setData(res.data.data.values)

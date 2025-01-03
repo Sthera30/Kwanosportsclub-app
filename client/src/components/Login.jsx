@@ -23,7 +23,7 @@ function Login() {
 
         try {
                                                                                                        //SEND COOKIES
-            const { data } = await axios.post("https://kwanosportsclub-backend-app.onrender.com/login", { email, password }, {withCredentials: true})
+            const { data } = await axios.post("https://kwanosportsclub.co.za/login", { email, password }, {withCredentials: true})
 
             if (data.error) {
                 toast.error(data.error)
@@ -34,7 +34,7 @@ function Login() {
 
                 localStorage.setItem("email", email)
 
-                const res = await axios.get('https://kwanosportsclub-backend-app.onrender.com/getUser', {withCredentials:true})
+                const res = await axios.get('https://kwanosportsclub.co.za/getUser', {withCredentials:true})
 
                 if(res.data.success){
                     setUser(res.data.data.user)

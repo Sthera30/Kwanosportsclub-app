@@ -22,7 +22,7 @@ function EditMission() {
 
         try {
 
-            const res = await axios.put(`https://kwanosportsclub-backend-app.onrender.com/updateMission`, { id, missionTitle, missionDescription })
+            const res = await axios.put(`https://kwanosportsclub.co.za/updateMission`, { id, missionTitle, missionDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)
@@ -44,7 +44,7 @@ function EditMission() {
 
         try {
 
-            const res = await axios.get(`https://kwanosportsclub-backend-app.onrender.com/getMissionById?id=${id}`)
+            const res = await axios.get(`https://kwanosportsclub.co.za/getMissionById?id=${id}`)
 
             if (res.data.success) {
                 setData(res.data.data.mission)

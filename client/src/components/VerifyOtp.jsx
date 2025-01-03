@@ -23,7 +23,7 @@ function VerifyOtp() {
 
         try {
 
-            const { data } = await axios.post(`https://kwanosportsclub-backend-app.onrender.com/verifyOtp`, { otp, email })
+            const { data } = await axios.post(`https://kwanosportsclub.co.za/verifyOtp`, { otp, email })
 
             if (data.success) {
                 toast.success(data.message)

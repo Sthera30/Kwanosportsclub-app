@@ -24,7 +24,7 @@ function AddMeetTheTeam() {
 
         try {
 
-            const res = await axios.post(`https://kwanosportsclub-backend-app.onrender.com/upload`, formData)
+            const res = await axios.post(`https://kwanosportsclub.co.za/upload`, formData)
 
             setImage({
                 url: res.data.url,
@@ -54,7 +54,7 @@ function AddMeetTheTeam() {
 
         try {
 
-            const res = await axios.post(`https://kwanosportsclub-backend-app.onrender.com/createTeam`, {userTeamProfile, userTeamName, userTeamDescription})
+            const res = await axios.post(`https://kwanosportsclub.co.za/createTeam`, {userTeamProfile, userTeamName, userTeamDescription})
 
             if(res.data.success){
                 toast.success(res.data.message)

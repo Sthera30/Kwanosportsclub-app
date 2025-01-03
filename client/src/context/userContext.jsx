@@ -18,7 +18,7 @@ export function UserContextProvider({ children }) {
         
         try {
 
-            const res =  await axios.get('https://kwanosportsclub-backend-app.onrender.com/getUser', {withCredentials: true})
+            const res =  await axios.get('https://kwanosportsclub.co.za/getUser', {withCredentials: true})
 
             if(res.data.success){
                 setUser(res.data.data.user)

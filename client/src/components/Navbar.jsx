@@ -78,7 +78,7 @@ function Navbar() {
 
         try {
 
-            const res = await axios.post('https://kwanosportsclub-backend-app.onrender.com/logout', {}, { withCredentials: true })
+            const res = await axios.post('https://kwanosportsclub.co.za/logout', {}, { withCredentials: true })
 
             if (res.data.success) {
                 toast.success(res.data.message)
@@ -225,3 +225,4 @@ function Navbar() {
 }
 
 export default Navbar
+

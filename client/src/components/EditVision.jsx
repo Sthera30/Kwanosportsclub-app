@@ -16,7 +16,7 @@ function EditVision() {
 
         try {
 
-            const res = await axios.get(`https://kwanosportsclub-backend-app.onrender.com/getVisionById?id=${id}`)
+            const res = await axios.get(`https://kwanosportsclub.co.za/getVisionById?id=${id}`)
 
             if (res.data.success) {
                 setData(res.data.data.vision)
@@ -40,7 +40,7 @@ function EditVision() {
 
         try {
 
-            const res = await axios.put(`https://kwanosportsclub-backend-app.onrender.com/updateVision`, { id, visionTitle, visionDescription })
+            const res = await axios.put(`https://kwanosportsclub.co.za/updateVision`, { id, visionTitle, visionDescription })
 
             if (res.data.success) {
                 toast.success(res.data.message)

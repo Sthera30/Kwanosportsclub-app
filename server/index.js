@@ -26,7 +26,7 @@ app.use(cookieParser())
 
 const corsOptions = {
     origin: [
-        "https://kwanosportsclub-frontend-app.onrender.com" 
+        "https://kwanosportsclub.co.za" 
     ],
   methods: ["GET", "POST", "PUT", "DELETE"], 
  credentials: true 

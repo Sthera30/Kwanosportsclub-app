@@ -18,7 +18,7 @@ function VerifyEmail() {
 
         try {
 
-            const {data} = await axios.post(`https://kwanosportsclub-backend-app.onrender.com/verifyEmail`, {email})
+            const {data} = await axios.post(`https://kwanosportsclub.co.za/verifyEmail`, {email})
 
             if(data.success){
                 navigate("/verify-otp")
