@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /login
+Disallow: /Register
+Disallow: /verify-otp
+Disallow: /change-password
+Disallow: /verify-email
+Disallow: /edit-vision/
+Disallow: /edit-mission/
+Disallow: /edit-about/
+Disallow: /add-values
+Disallow: /edit-values/
+Disallow: /add-team
+Disallow: /edit-team-member/
+Allow: /
+
+# Point to your sitemap
+Sitemap: http://localhost:5000/sitemap.xml

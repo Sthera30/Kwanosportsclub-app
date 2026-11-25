@@ -1,0 +1,105 @@
+.contact-container {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.contact-container h2 {
+    font-weight: 300 !important;
+}
+
+.contact-container-inner {
+    /* background: blue; */
+}
+
+.contact-container-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 5%;
+    gap: 5rem;
+    background: linear-gradient(180deg, hsl(199, 49%, 82%), #fff);
+    height: 40rem;
+}
+
+.left-container p:nth-child(1) {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.left-container p:nth-child(2) {
+    max-width: 25rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.left-container p:nth-child(3) {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.left-container p:nth-child(4) {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.right-containers form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -5rem;
+}
+
+.right-containers form label {
+    margin: 1rem 0rem;
+}
+
+.right-containers form input {
+    border: .1rem solid hsl(0, 10%, 89%);
+    width: 28rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+
+.right-containers form textarea {
+    border: .1rem solid hsl(0, 10%, 89%);
+    width: 28rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.right-containers form button {
+    color: #fff;
+    background: green;
+    padding: 1.1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 75%;
+}
+
+.right-containers form button:hover {
+    background: hsl(120, 69%, 51%);
+}
+
+.left-container {
+    flex: 1 1 25rem;
+}
+
+.right-containers {
+    flex: 1 1 25rem;
+}
+
+
+/*
+
+
+  <a style={{ textDecoration: 'none' }} href="https://www.tiktok.com/@stheratini?_t=8r7U5fW7Gis&_r=1" target='_blank' rel='noopener noreferrer'><FaTiktok style={{color: '#fff', background: '#333', borderRadius: '.5rem', width: '2rem', height: '2rem', lineHeight: '2', padding: '.4rem'}} />&nbsp;TikTok</a>
+  <a style={{ textDecoration: 'none' }} href="https://www.instagram.com/trap_pkq/profilecard/?igsh=b3hoZml2NzJnczFO" target='_blank' rel='noopener noreferrer'><FaInstagram style={{color: '#fff', background: 'linear-gradient(65deg, hsl(300, 93%, 40%), orange)',borderRadius: '.5rem', width: '2rem', height: '2rem', lineHeight: '2', padding: '.4rem'}} />&nbsp;Instagram</a>
+
+
+*/

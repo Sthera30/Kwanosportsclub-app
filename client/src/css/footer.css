@@ -1,0 +1,50 @@
+.footer-container{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-inner a{
+    margin: 1rem 0rem;
+    cursor: pointer;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.footer-inner p{
+    font-size: 1.2rem;
+}
+
+
+
+.footer-inner .socials a{
+    margin-left: 1rem;
+}
+
+.tennis-court{
+    font-size: 10rem;
+    color: green;
+}
+
+
+.credit{
+    margin: 5rem 0rem;
+    border-top: .1rem solid hsl(0, 4%, 78%);
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.st{
+    color: green;
+    cursor: pointer;
+}

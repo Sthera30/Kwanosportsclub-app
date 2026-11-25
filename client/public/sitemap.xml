@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>http://localhost:5000/</loc></url>
+  <url><loc>http://localhost:5000/about-us</loc></url>
+  <url><loc>http://localhost:5000/meet-the-team</loc></url>
+  <url><loc>http://localhost:5000/projects</loc></url>
+  <url><loc>http://localhost:5000/equipment</loc></url>
+  <url><loc>http://localhost:5000/community-building</loc></url>
+  <url><loc>http://localhost:5000/get-involved</loc></url>
+  <url><loc>http://localhost:5000/documents</loc></url>
+  <url><loc>http://localhost:5000/contact-us</loc></url>
+</urlset>

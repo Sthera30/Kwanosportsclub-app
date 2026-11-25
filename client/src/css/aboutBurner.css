@@ -1,0 +1,12 @@
+.about-burner-container{
+    margin-bottom: -3rem;
+}
+
+.about-burner-container .about-burner{
+    background-image: url('../../public/kwano-sports-club-tennis-coaches.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(60%);
+    height: 80vh;
+}
