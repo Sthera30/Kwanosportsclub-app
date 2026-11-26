@@ -93,8 +93,20 @@ git clone https://github.com/Sthera30/Kwanosportsclub-app.git
 
 2. Navigate into the client directory.
 
-   ```bash
+```bash
 cd Kwanosportsclub-app/client
 ```
 
+3. Install the dependencies
 
+```bash
+npm install
+```
+4. Start the development server.
+
+```bash
+npm run dev
+```
+5. Open the local URL provided by Vite in your browser.
+
+## Developed with the goal of supporting community sports development through technology
