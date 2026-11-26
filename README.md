@@ -84,3 +84,17 @@ Kwanosportsclub-app/
 ## Getting Started
 
 To run the project locally.
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Sthera30/Kwanosportsclub-app.git
+```
+
+2. Navigate into the client directory.
+
+   ```bash
+cd Kwanosportsclub-app/client
+```
+
+
