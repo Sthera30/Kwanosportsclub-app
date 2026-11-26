@@ -61,3 +61,26 @@ Contributions help the club:
 ## Project Structure
 
 The repository contains the frontend application built with React.js
+
+```text
+Kwanosportsclub-app/
+├── .gitignore
+├── README.md
+└── client/
+    ├── public/
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   ├── assets/
+    │   └── App.jsx
+    ├── .eslintrc.cjs
+    ├── .gitignore
+    ├── index.html
+    ├── package.json
+    ├── package-lock.json
+    └── vite.config.js
+```
+
+## Getting Started
+
+To run the project locally.
